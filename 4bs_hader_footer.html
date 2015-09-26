@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example of Bootstrap 2 Equal Column Layout</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<style type="text/css">
+	.row > div{
+        margin-bottom: 15px;
+    }
+	.header{
+        min-height: 90px;
+    }
+    .footer{
+        min-height: 60px;
+    }
+    .header, .footer{
+        background: #2f2f2f;
+    }
+    .content{
+		min-height: 300px;
+        background: #dbdfe5;
+    }
+    .content.bg-alt{
+        background: #b4bac0;
+    }
+</style>
+</head>
+<body>
+	<!-- To generate  Header and footerand middle division-->
+	<div class="container">
+    	<div class="row">
+            <div class="col-sm-12">
+                <div class="header"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="content"></div>
+            </div>
+            <div class="col-sm-6">
+                <div class="content bg-alt"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="footer"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>                                		
